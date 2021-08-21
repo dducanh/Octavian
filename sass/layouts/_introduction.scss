@@ -1,0 +1,31 @@
+.introduction {
+  padding: 23rem 0 23rem 30rem;
+  color: $color-white;
+
+  &__left {
+    position: relative;
+    z-index: 500;
+  }
+  &__title {
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 6rem;
+    z-index: 500;
+    & span {
+      font-weight: 300;
+    }
+  }
+  &__desc {
+    font-size: 1.4rem;
+    margin-bottom: 6rem;
+  }
+  &__right {
+    display: inline-block;
+    position: absolute;
+    top: 15rem;
+    right: 0;
+  }
+  &__bgr {
+    width: 90%;
+  }
+}

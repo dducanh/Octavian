@@ -1,0 +1,44 @@
+.contact {
+  background-image: url("../../images/pic11.png");
+  color: $color-white;
+  text-align: center;
+  &__title {
+    padding-top: 15rem;
+  }
+  &__desc {
+    color: $color-white;
+    line-height: 2;
+    font-size: 1.4rem;
+  }
+  &__input {
+    border: 1px solid #ccc;
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    padding: 2rem 4rem;
+    margin-bottom: 2rem;
+    font-family: "Poppins", sans-serif;
+    transition: all 0.4s;
+    &::-webkit-input-placeholder {
+      color: #fff;
+    }
+    &:focus {
+      outline: none;
+      border: 1px solid $color-white;
+    }
+  }
+  &__form {
+    @include flexBox(column, center, center);
+    padding: 0 50rem 5rem;
+  }
+  &__btn {
+    margin-bottom: 15rem;
+  }
+}
+textarea {
+  background: transparent;
+  resize: none;
+}
+input[type="text"] {
+  background: transparent;
+}

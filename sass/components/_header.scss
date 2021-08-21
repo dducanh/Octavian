@@ -1,0 +1,56 @@
+.header {
+  background-image: linear-gradient(
+    to right bottom,
+    $color-orange,
+    $color-pink
+  );
+  width: 100%;
+  height: 100%;
+
+  &__navbar {
+    padding: 4.5rem 30rem;
+    @include flexBox(row, space-between, center);
+    border-bottom: 1px solid #eee;
+  }
+  &__logo {
+    @include flexBox(row, space-between, center);
+    cursor: pointer;
+  }
+  &__img {
+    margin-right: 1rem;
+  }
+  &__title {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: $color-white;
+  }
+  &__links {
+    list-style: none;
+    @include flexBox(row, space-around, center);
+  }
+  &__link a {
+    text-decoration: none;
+    color: $color-white;
+    font-size: 1.4rem;
+    transition: all 0.3s;
+  }
+  &__link:not(:last-child) {
+    margin-right: 6.5rem;
+  }
+  &__link:hover a {
+    color: $color-blue;
+  }
+  &__icons {
+    color: $color-white;
+    font-size: 2rem;
+    cursor: pointer;
+    &-bar {
+      display: inline;
+      margin-left: 1rem;
+      border: 1px solid $color-white;
+      font-size: 2.2rem;
+      padding: 0.5rem;
+      border-radius: 2px;
+    }
+  }
+}

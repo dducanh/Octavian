@@ -1,0 +1,57 @@
+.feedback {
+  padding: 0 15rem;
+  @include flexBox(column, center, center);
+  margin-bottom: 15rem;
+
+  &__top {
+    @include flexBox(row, center, center);
+    padding: 0 20rem;
+    position: relative;
+    &--img {
+      display: inline-block;
+      flex: 1 1 10rem;
+      width: 30rem;
+    }
+    &--content {
+      flex: 2 1 40rem;
+      box-shadow: 0 1rem 2rem rgba($color: rgb(32, 32, 85), $alpha: 0.2);
+      text-align: center;
+      padding: 5rem 5rem;
+      border-radius: 5px;
+      margin: 0 1rem;
+      & p {
+        font-size: 2rem;
+      }
+    }
+    &--icon {
+      position: absolute;
+      top: 25%;
+      left: 59%;
+    }
+  }
+  &__bottom {
+    width: 100%;
+    background-color: $color-blue;
+    @include flexBox(row, space-around, center);
+    color: $color-white;
+    border-radius: 22px;
+    &--left {
+      width: 50%;
+      padding: 5rem 10rem 5rem 15rem;
+    }
+    &--right {
+      width: 50%;
+      @include flexBox(row, center, center, wrap);
+      padding: 10rem;
+    }
+    &--item {
+      width: 50%;
+      padding: 5rem;
+    }
+    &--desc {
+      color: $color-white;
+      padding-right: 2rem;
+      line-height: 2.2;
+    }
+  }
+}

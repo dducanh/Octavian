@@ -1,0 +1,68 @@
+.update {
+  padding: 0 30rem 15rem;
+  text-align: center;
+  &__content {
+    @include flexBox(row, space-between, stretch);
+    height: 50rem;
+    margin-bottom: 5rem;
+  }
+
+  &__text {
+    padding: 2rem;
+    text-align: left;
+    line-height: 2;
+  }
+  &__title {
+    margin-bottom: 1rem;
+  }
+
+  &__desc {
+    font-size: 1.2rem;
+    color: $color-grey;
+  }
+
+  &__left {
+    width: 49%;
+    box-shadow: 0 1.5rem 2.5rem rgba($color: rgb(43, 35, 114), $alpha: 0.2);
+    border-radius: 8px;
+    &--image {
+      height: 30rem;
+    }
+    &--img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+      overflow: hidden;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+  }
+  &__right {
+    width: 49%;
+    &--list {
+      list-style: none;
+    }
+    &--image {
+      width: 30rem;
+      height: 15rem;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+    &--img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    &--item {
+      @include flexBox(row, center, center);
+      box-shadow: 0 1.5rem 2.5rem rgba($color: rgb(43, 35, 114), $alpha: 0.2);
+      width: 100%;
+      height: 100%;
+      border-radius: 5px;
+    }
+    &--item:not(:last-child) {
+      margin-bottom: 2.5rem;
+    }
+  }
+}

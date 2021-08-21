@@ -1,0 +1,56 @@
+.title {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 5rem;
+}
+
+.desc {
+  font-size: 1.2rem;
+  color: $color-grey;
+  margin-bottom: 5rem;
+}
+
+[class^="flaticon-"]:before,
+[class*=" flaticon-"]:before,
+[class^="flaticon-"]:after,
+[class*=" flaticon-"]:after {
+  font-size: 8rem;
+}
+
+.icon {
+  width: 15rem;
+  height: 17rem;
+  color: $color-blue;
+  box-shadow: 0 1rem 1.5rem rgba($color: black, $alpha: 0.1);
+  @include flexBox(row, center, center);
+  position: relative;
+  transition: all 0.2s;
+
+  &__clock {
+    position: absolute;
+    top: -10rem;
+    left: 0;
+  }
+  &__light {
+    position: absolute;
+    top: -20rem;
+    left: 20rem;
+  }
+
+  &__man {
+    position: absolute;
+    top: 0rem;
+    left: 20rem;
+  }
+  &:hover {
+    color: $color-white;
+    background-color: $color-blue;
+    transform: translateY(-5px) scale(1.4);
+    z-index: 20;
+  }
+}
+.icon1,
+.icon2,
+.icon3 {
+  margin-left: -2rem;
+}

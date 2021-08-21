@@ -1,0 +1,15 @@
+.copyright {
+  padding: 5rem 20rem;
+  color: #ccc;
+  background-color: $color-dark-2;
+  position: relative;
+  &__rocket {
+    position: absolute;
+    right: 25rem;
+    top: -3rem;
+  }
+  & a {
+    color: $color-white;
+    text-decoration: none;
+  }
+}

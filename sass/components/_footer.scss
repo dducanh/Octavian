@@ -1,0 +1,51 @@
+.footer {
+  background-color: $color-dark-1;
+  padding: 15rem 20rem;
+  color: #ccc;
+  font-size: 1.2rem;
+  line-height: 2;
+  &__list {
+    @include flexBox(row, center, stretch);
+  }
+  &__item {
+    flex: 1 1 40rem;
+  }
+  &__logo {
+    @include flexBox(row);
+    &--img {
+      margin-right: 1rem;
+    }
+  }
+  &__title {
+    color: $color-white;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+  }
+  &__desc {
+    padding-right: 5rem;
+    margin-bottom: 2rem;
+  }
+  &__icons {
+    padding-right: 30rem;
+    @include flexBox(row, space-around);
+    cursor: pointer;
+    transition: color 0.2s;
+    &--icon:hover {
+      color: $color-white;
+    }
+  }
+  &__column {
+    list-style: none;
+    & li {
+      cursor: pointer;
+      transition: color 0.2s;
+    }
+    & li:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+    & li:hover {
+      color: $color-white;
+    }
+  }
+}

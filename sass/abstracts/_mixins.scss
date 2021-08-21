@@ -1,0 +1,19 @@
+@mixin flexBox(
+  $direction: row,
+  $justify-content: flex-start,
+  $align-items: flex-start,
+  $wrap: nowrap
+) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  flex-wrap: $wrap;
+}
+
+@mixin absCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

@@ -1,0 +1,33 @@
+.btn {
+  text-decoration: none;
+  color: $color-white;
+  display: inline-block;
+  font-size: 1.4rem;
+  padding: 2.5rem 7rem;
+  border-radius: 3px;
+  box-shadow: 0 1rem 2rem rgba($color: $color-dark-1, $alpha: 0.3);
+  transition: all 0.4s;
+  &:hover {
+    transform: translateY(-4px);
+    background-color: rgb(34, 78, 119);
+    color: $color-white;
+  }
+  &:active {
+    transform: translateY(0);
+    box-shadow: 0 0.5rem 1.5rem rgba($color: $color-dark-1, $alpha: 0.3);
+  }
+}
+
+.btn-blue {
+  background-color: $color-blue;
+}
+
+.btn-green {
+  background-color: $color-green;
+  color: $color-blue;
+  font-weight: 600;
+}
+
+.btn-primary {
+  background-image: linear-gradient(to left, $color-orange, $color-pink);
+}
